@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="container">
+    <div class="logo">
+      <img src="../../../assets/arg-programa.png" alt="logo AP" id="logoAP" />
+    </div>
+    <div class="redes">
+      <div>
+        <a href=""><img src="../../../assets/logoIN.png" class="logoIN" /></a>
+        <a href=""
+          ><img src="../../../assets/logoGitHub.png" class="logoGitHub"
+        /></a>
+        <a href=""><img src="../../../assets/logoIG.png" class="logoIG" /></a>
+        <button
+          type="button"
+          class="btn btn-dark"
+          (click)="login()"
+          *ngIf="!isLogged"
+        >
+          Ingreso
+        </button>
+        <button
+          type="button"
+          class="btn btn-dark"
+          (click)="onLogOut()"
+          *ngIf="isLogged"
+        >
+          Cerrar sesión
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
